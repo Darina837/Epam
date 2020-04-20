@@ -2,6 +2,10 @@ html {
   font-size: 1.2vw;
 }
 
+body {
+  font-family: roboto;
+}
+
 button {
   font-size: 1.2vw;
 }
