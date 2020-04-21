@@ -1,0 +1,245 @@
+@media print {
+    .tm-sidebar, img, #about, .gallery-container, .carousel-indicators, .carousel-item, #contact, .tm-content-box > img {
+        display: none;
+    }
+    .tm-banner-inner > img {
+        display: block;
+    }
+    * {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    .tm-banner {
+        padding: 0;
+    }
+    .tm-team-description-container {
+        margin: 0;
+        margin-left: 70px;
+        padding: 0;
+    }
+    .tm-section-description {
+        font-style: italic;
+        text-align: center;
+    }
+    .padding-medium {
+        padding: 0;
+        margin-top: 5px;
+    }
+    .padding-medium > ol {
+        list-style: none;
+        padding: 0;
+    }
+    .padding-medium > ol > li:nth-child(even) {
+        margin-left: 130px;
+    }
+    .padding-medium > ol > li:nth-child(odd) {
+        margin-right: 130px;
+    }
+    .tm-main-content {
+        padding: 0;
+        margin: 0;
+    }
+    .heading, .blocks, .tm-content-box {
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+    #ideas, #tmCarousel, .carousel-indicators, .carousel-inner {
+        padding: 0;
+        margin: 0;
+    }
+    .padding-medium > h2 {
+        color: lightskyblue;
+    }
+    .blocks > .flex-item {
+        margin-top: -20px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .carousel-content > .flex-item {
+        padding-top: 0;
+        margin: 0;
+        margin-top: -5px;   
+    }
+}
+
+@media screen {
+    * {
+    word-spacing: 7px;
+    letter-spacing: 1px;
+    }
+    .tm-sidebar {
+        box-shadow: 0 0 2px 1px rgba(61, 55, 61, 0.7);
+    }
+    .tm-nav-item {
+        transition: all 0.3s ease-in-out;
+    } 
+    .tm-nav-item:hover {
+        background-color: lightskyblue;
+    }
+    .tm-nav-item:hover .tm-nav-item-link {
+        color: #fff;
+    }
+    .tm-content-box {
+        box-shadow: 1px 1px 2px 2px rgba(61, 55, 61, 0.7);
+    }
+    .tm-banner {
+        padding: 0;
+        border: 1px solid;
+        border-image-slice: 1;
+        border-width: 30px;
+        border-image-source: linear-gradient(to top, lightskyblue, burlywood);        
+    }
+    .tm-banner-text {
+        word-spacing: 5px;
+        letter-spacing: 2px;
+        animation-name: move;
+        animation-duration: 3s;
+    }
+    .tm-banner-text:before {
+        content: attr(data-content);
+        position: absolute;
+        transform: rotateX(180deg);
+        transform-origin: bottom;
+        line-height: 1.1em;
+        background: linear-gradient(0deg, lightskyblue, transparent 100%);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    #wrapper-post-team {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    #wrapper-post-team > .tm-team-description-container {
+        text-align: center;
+    }
+    #wrapper-post-team > .tm-team-description-container > .tm-section-description {
+        font-style: italic;
+    }
+    .box-bg {
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+    }
+    .box-bg:hover {
+        background-color: lightskyblue;
+    } 
+    .box-bg > h2 {
+        transition: all 0.5s ease-in-out;
+    }
+    .box-bg:hover > h2 {
+        color: white;
+    }
+    .padding-medium > h2 {
+        color: lightskyblue;
+        text-align: center;
+    }
+    .padding-medium > ol {
+        list-style: decimal-leading-zero;
+    }
+    .padding-medium > ol > li:hover a{
+        color: red;
+        font-weight: bold;
+    }
+    .padding-medium > ol > li:hover::before{
+        content: '>';
+        color: red;
+        font-weight: bold;
+    }
+    .text::after {
+        content: "New";
+        font-size: 10px;
+        font-weight: bold;
+        position: relative;
+        bottom: 10px;
+        color: red;
+    }
+    .heading > .padding-medium, .blocks > .padding-medium {
+        box-shadow: 1px 1px 2px 2px rgba(61, 55, 61, 0.7);
+    }
+    .tm-team-description-container > .tm-section-description {
+        font-style: italic;
+    }
+    .tm-team-description-container {
+        max-width: 100%;
+    }
+    .tm-team-description-container > p {
+        text-indent: 1.5em; 
+        text-align: justify;
+    }
+    .blocks > .padding-medium {
+        padding-right: 60%;
+    }
+    .blocks > .flex-2-col {
+        padding-bottom: 0;
+        margin: 0;
+    }
+    .tm-content-box > .boxes > li {
+        padding: 10px;
+    }
+    .tm-content-box > .boxes > li:nth-child(even) {
+        background-color: lightskyblue;
+        color: white;
+    }
+    .tm-content-box > .boxes > li > div > p::first-letter {
+        font-weight: bolder;
+        font-size: 20px;
+    }
+    .carousel-content > .flex-item > .tm-section-description {
+        font-style: italic;
+    }
+    .padding-medium > .tm-section-title {
+        padding-left: 100px;
+    }
+    #contact > .tm-section-title {
+        margin-left: 60%;
+    }
+    #contact_name, #contact_email, #contact_subject {
+        border: none;
+        border-bottom: 1px solid lightskyblue;
+    }
+    #contact_name:focus, #contact_email:focus, #contact_subject:focus {
+        background-color: lightskyblue;
+    }
+    #contact_subject{
+        background: url(../img/email-icon.png) no-repeat 100% 50%;
+        background-size: 3%;
+    }
+    .submit-btn {
+        background-color: #fff;
+        color: lightskyblue;
+        border: 1px solid lightskyblue;
+        margin-left: 90.5%;
+        border-radius: 0;
+        transition: all 0.5s ease-in-out;
+    }
+    .submit-btn:hover {
+        background-color: lightskyblue;
+        color: white;
+        border: none;
+    }
+    .active {
+        position: relative;
+    }
+    .tm-main-content > .tm-content-box {
+        position: relative;
+    }
+    .tm-team-img::before, .heading::before, .blocks::before, .tm-main-content > .tm-content-box::before {
+        content: url();
+        height: 0;
+        width: 0;
+        border-top: 55px solid lightskyblue;
+        border-right: 55px solid transparent;
+        position: absolute;
+    }
+    @keyframes move {
+        from {
+            transform: rotateZ(45deg);
+        }
+        to {
+            transform: rotateZ(0);
+        }
+    }
+}
