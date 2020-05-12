@@ -1,0 +1,48 @@
+li {
+    list-style: none;
+}
+
+.material-icons {
+    color: orange;
+}
+
+li>div:hover {
+    background-color: rgb(233, 230, 230);
+}
+
+.tree div {
+    cursor: pointer;
+}
+
+.emptyText > div {
+    cursor: text;
+}
+
+.emptyText {
+    cursor: text;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.emptyText > div:hover {
+    background-color: #fff;
+}
+
+.rightClick {
+    margin: 0;
+    padding: 5px;
+    border-radius: 2px;
+    border: 2px solid #8b8b8b;
+    display: none;
+    position: fixed;
+    background-color: rgb(204, 198, 198);
+    cursor: pointer;
+}
+
+.rightClick.active {
+    display: block;
+}
+
+.rightClick>li:hover {
+    background-color: rgb(204, 198, 198);
+}
